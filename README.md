@@ -114,10 +114,10 @@ Dense3D Speckle Window Size [0, 256]
 * ~speckle_range (int, default: 14)
 Dense3D Speckle Range [0, 32]
 
-###Testing the DUO ROS package
+##Testing the DUO ROS package
 Make sure that DUO device is plugged in the USB port and it is operating properly.
 
-####DUO ROS Camera Example
+###DUO ROS Camera Example
 This example demonstrates the acquisition of rectified stereo image pair from DUO. 
 To launch DUO Camera ROS example, in a terminal run the following command:
 
@@ -126,7 +126,7 @@ To launch DUO Camera ROS example, in a terminal run the following command:
 You should see the following image:
 ![](https://duo3d.com/public/media/products/ROS-DUO-Camera.jpg)
 
-####DUO ROS IMU Example
+###DUO ROS IMU Example
 This example demonstrates the DUO's on-board 6DoF sensor fusion using Madgwick algorithm running at 100Hz.
 To launch DUO IMU ROS example, in a terminal run the following command:
 
@@ -135,7 +135,7 @@ To launch DUO IMU ROS example, in a terminal run the following command:
 You should see the following image:
 ![](https://duo3d.com/public/media/products/ROS-DUO-IMU.jpg)
 
-####DUO ROS Point Cloud Example
+###DUO ROS Point Cloud Example
 This example demonstrates disparity and point cloud generation using DUO. 
 To launch DUO IMU Point Cloud example, in a terminal run the following command:
 
