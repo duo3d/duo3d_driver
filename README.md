@@ -123,7 +123,7 @@ To launch DUO Camera ROS example, in a terminal run the following command:
 
     $ roslaunch duo3d_driver duo3d_camera.launch
 
-You should see the following image:
+You should see the following:
 ![DUO ROS Camera Example](https://duo3d.com/public/media/products/ROS-DUO-Camera.jpg)
 
 ###DUO ROS IMU Example
@@ -132,7 +132,7 @@ To launch DUO IMU ROS example, in a terminal run the following command:
 
     $ roslaunch duo3d_driver duo3d_imu.launch
  
-You should see the following image:
+You should see the following:
 ![DUO ROS IMU Example](https://duo3d.com/public/media/products/ROS-DUO-IMU.jpg)
 
 ###DUO ROS Point Cloud Example
@@ -141,7 +141,7 @@ To launch DUO IMU Point Cloud example, in a terminal run the following command:
 
     $ roslaunch duo3d_driver duo3d_depth.launch
  
-You should see the following image:
+You should see the following:
 ![DUO ROS Point Cloud Example](https://duo3d.com/public/media/products/ROS-DUO-PointCloud.jpg)
 
 ##Getting Help
