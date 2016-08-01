@@ -1,0 +1,25 @@
+<launch>
+	<arg name="pi/2" value="1.5707963267948966" />
+	<node pkg="tf" type="static_transform_publisher" name="duo3d_base_link" args="0 0 0 0 0 $(arg pi/2) /duo3d/camera_frame duo3d_camera 100" />
+
+    <node name="duo3d" pkg="duo3d_driver" type="duo3d_driver" output="screen">
+		<param name="frame_rate" value="30.0"/>
+		<rosparam param="image_size">[320, 240]</rosparam>
+		<param name="dense3d_license" value="OVMZU-ZHFE2-9K41K-NQL44-WX3DV"/>
+		<param name="gain" value="0"/>
+		<param name="exposure" value="50"/>
+		<param name="auto_exposure" value="true"/>
+		<param name="vertical_flip" value="true"/>
+		<param name="led" value="35"/>
+		<param name="processing_mode" value="1"/>
+		<param name="image_scale" value="0"/>
+		<param name="pre_filter_cap" value="8"/>
+		<param name="num_disparities" value="7"/>
+		<param name="sad_window_size" value="3"/>
+		<param name="uniqueness_ratio" value="2"/>
+		<param name="speckle_window_size" value="256"/>
+		<param name="speckle_range" value="2"/>
+    </node>
+	<node pkg="rqt_gui" type="rqt_gui" name="rqt_gui" args="--perspective-file $(find duo3d_driver)/launch/rqt/depth_view.perspective"/>
+	<node pkg="rviz" type="rviz" name="rviz" args="-d $(find duo3d_driver)/launch/rviz/depth.rviz"/>
+</launch>

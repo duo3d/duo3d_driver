@@ -1,0 +1,11 @@
+<launch>
+     <node name="duo3d" pkg="duo3d_driver" type="duo3d_driver" output="screen">
+		<param name="frame_rate" value="60.0"/>
+		<rosparam param="image_size">[320, 240]</rosparam>
+		<param name="dense3d_license" value="OVMZU-ZHFE2-9K41K-NQL44-WX3DV"/>
+		<param name="auto_exposure" value="true"/>
+		<param name="vertical_flip" value="true"/>
+		<param name="led" value="30"/>
+    </node>
+	<node pkg="rqt_gui" type="rqt_gui" name="rqt_gui" args="--perspective-file $(find duo3d_driver)/launch/rqt/stereo_view.perspective"/>
+</launch>
