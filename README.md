@@ -71,47 +71,47 @@ The `duo3d_driver` node interfaces with DUO SDK and publishes images, disparity,
  DUO IMU data
 
 ###Parameters
-* ~frame_rate (double, default: 30)
+* `~frame_rate` (double, default: 30)
 DUO image capture frame rate
-* ~image_size (vector<int>, default: {640,480})
+* `~image_size` (vector<int>, default: {640,480})
 DUO image frame size
-* ~dense3d_license (string)
+* `~dense3d_license` (string)
 Dense3D license string
-* ~gain (double, default: 0%)
+* `~gain` (double, default: 0%)
 Image gain value [0, 100]
-* ~exposure (double, default: 50%)
+* `~exposure` (double, default: 50%)
 Image exposure value [0, 100]
-* ~auto_exposure (bool, default: False)
+* `~auto_exposure` (bool, default: False)
 Image auto exposure value [False, True]
-* ~camera_swap (bool, default: False)
+* `~camera_swap` (bool, default: False)
 Image swap [False, True]
-* ~horizontal_flip (bool, default: False)
+* `~horizontal_flip` (bool, default: False)
 Horizontal image flip [False, True]
-* ~vertical_flip (bool, default: False)
+* `~vertical_flip` (bool, default: False)
 Vertical image flip [False, True]
-* ~led (double, default: 10%)
+* `~led` (double, default: 10%)
 LED brightness value [0, 100]
-* ~accel_range (int, default: +/-2g (0))
+* `~accel_range` (int, default: +/-2g (0))
 Accelerometer Range [+/-2g (0), +/-4g (1), +/-8g (2), +/-16g (3)]
-* ~gyro_range (int, default: 250deg/s)
+* `~gyro_range` (int, default: 250deg/s)
 Gyroscope Range [250deg/s (0), 500deg/s (1), 1000deg/s (2), 2000deg/s (3)]
-* ~imu_rate (double, default: 100Hz)
+* `~imu_rate` (double, default: 100Hz)
 IMU Data Sampling Rate [25, 500]
-* ~processing_mode (int, default: BM (0))
+* `~processing_mode` (int, default: BM (0))
 Dense3D Processing Mode [BM (0), SGBM(1)]
-* ~image_scale (int, default: ScaleXY (3))
+* `~image_scale` (int, default: ScaleXY (3))
 Dense3D Image Scaling Mode [ScaleNone (0), ScaleX (1), ScaleY (2), ScaleXY (3)]
-* ~pre_filter_cap (int, default: 28)
+* `~pre_filter_cap` (int, default: 28)
 Dense3D Pre-filter cap [1, 63]
-* ~num_disparities (int, default: 4)
+* `~num_disparities` (int, default: 4)
 Dense3D Number of disparities [2, 16]
-* ~sad_window_size (int, default: 6)
+* `~sad_window_size` (int, default: 6)
 Dense3D SAD Window Size [2, 10]
-* ~uniqueness_ratio (int, default: 27)
+* `~uniqueness_ratio` (int, default: 27)
 Dense3D Uniqueness Ratio [1, 100]
-* ~speckle_window_size (int, default: 52)
+* `~speckle_window_size` (int, default: 52)
 Dense3D Speckle Window Size [0, 256]
-* ~speckle_range (int, default: 14)
+* `~speckle_range` (int, default: 14)
 Dense3D Speckle Range [0, 32]
 
 ##Testing the DUO ROS package
@@ -124,7 +124,7 @@ To launch DUO Camera ROS example, in a terminal run the following command:
     $ roslaunch duo3d_driver duo3d_camera.launch
 
 You should see the following image:
-![](https://duo3d.com/public/media/products/ROS-DUO-Camera.jpg)
+![DUO ROS Camera Example](https://duo3d.com/public/media/products/ROS-DUO-Camera.jpg)
 
 ###DUO ROS IMU Example
 This example demonstrates the DUO's on-board 6DoF sensor fusion using Madgwick algorithm running at 100Hz.
@@ -133,7 +133,7 @@ To launch DUO IMU ROS example, in a terminal run the following command:
     $ roslaunch duo3d_driver duo3d_imu.launch
  
 You should see the following image:
-![](https://duo3d.com/public/media/products/ROS-DUO-IMU.jpg)
+![DUO ROS IMU Example](https://duo3d.com/public/media/products/ROS-DUO-IMU.jpg)
 
 ###DUO ROS Point Cloud Example
 This example demonstrates disparity and point cloud generation using DUO. 
@@ -142,7 +142,7 @@ To launch DUO IMU Point Cloud example, in a terminal run the following command:
     $ roslaunch duo3d_driver duo3d_depth.launch
  
 You should see the following image:
-![](https://duo3d.com/public/media/products/ROS-DUO-PointCloud.jpg)
+![DUO ROS Point Cloud Example](https://duo3d.com/public/media/products/ROS-DUO-PointCloud.jpg)
 
 ##Getting Help
 
