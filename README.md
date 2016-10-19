@@ -38,6 +38,7 @@ Get the package from github and put it in your catkin workspace ''src'' folder:
 
     $ cd ~/catkin_ws/src
     $ git clone https://github.com/duo3d/duo3d_driver
+    $ chmod a+x cfg/Duo3D.cfg
 
 Build the package:
 
