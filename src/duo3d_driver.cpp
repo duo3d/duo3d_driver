@@ -451,8 +451,8 @@ protected:
             _msg_cam_info[i].K.fill(0.0);
             _msg_cam_info[i].K[0] = stereo.P1[0]; // fx
             _msg_cam_info[i].K[2] = stereo.P1[2]; // cx
-            _msg_cam_info[i].K[4] = stereo.P1[4]; // fy
-            _msg_cam_info[i].K[6] = stereo.P1[6]; // cy
+            _msg_cam_info[i].K[4] = stereo.P1[5]; // fy
+            _msg_cam_info[i].K[5] = stereo.P1[6]; // cy
             _msg_cam_info[i].K[8] = 1.0;
             _msg_cam_info[i].R.fill(0.0);
             _msg_cam_info[i].P.fill(0.0);
