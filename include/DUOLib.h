@@ -4,7 +4,7 @@
 //
 // For updates and file downloads go to: http://duo3d.com/
 //
-// Copyright 2014-2016 (c) Code Laboratories, Inc.  All rights reserved.
+// Copyright 2014-2017 (c) Code Laboratories, Inc.  All rights reserved.
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #ifndef _DUOLIB_H
@@ -147,7 +147,7 @@ API_FUNCTION(int) EnumerateDUOResolutions(DUOResolutionInfo *resList, int32_t re
                                           int32_t binning = DUO_BIN_ANY, float fps = -1);
 
 // DUO device initialization
-API_FUNCTION(bool) OpenDUO(DUOInstance *duo);
+API_FUNCTION(bool) OpenDUO(DUOInstance *duo, uint32_t index = 0);
 API_FUNCTION(bool) CloseDUO(DUOInstance duo);
 
 // DUO frame callback function

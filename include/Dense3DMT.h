@@ -4,7 +4,7 @@
 //
 // For updates and file downloads go to: http://duo3d.com/
 //
-// Copyright 2014-2016 (c) Code Laboratories, Inc.  All rights reserved.
+// Copyright 2014-2017 (c) Code Laboratories, Inc.  All rights reserved.
 //
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #ifndef _DENSE3DMT_H
@@ -83,7 +83,7 @@ API_FUNCTION(Dense3DErrorCode) Dense3DGetErrorCode();
 API_FUNCTION(char*) Dense3DGetLibVersion();
 
 // Dense3D initialization
-API_FUNCTION(bool) Dense3DOpen(Dense3DMTInstance *dense3d);
+API_FUNCTION(bool) Dense3DOpen(Dense3DMTInstance *dense3d, uint32_t index = 0);
 API_FUNCTION(bool) Dense3DClose(Dense3DMTInstance dense3d);
 
 // Dense3D frame callback function
