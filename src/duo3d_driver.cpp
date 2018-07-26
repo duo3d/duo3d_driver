@@ -271,6 +271,7 @@ protected:
             SetDUOLedPWM(duo, config.led);
             SetDUOIMURange(duo, config.accel_range, config.gyro_range);
             SetDUOIMURate(duo, config.imu_rate);
+            SetDUOUndistort(duo, config.undistort);
         }
         // Set Dense3D parameters
         Dense3DParams params;
